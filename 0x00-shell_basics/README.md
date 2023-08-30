@@ -16,3 +16,4 @@ scriptfiles
 14-copy_html :a script that copies all the html files to the parent directory without coping overwritten a file or copy older files than the existing ones
 100-lets_move : a script that moves all files beginning with an uppercase letter to the directory /tmp/u
 101-clean_emacs :a script the delets all the files in the current directory that ends with ~
+102-tree :a script the makes the directories welcome/to/school in one line
