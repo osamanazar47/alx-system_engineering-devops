@@ -7,3 +7,4 @@ scriptfiles
 5-listfilesdigitonly :is a script for displaying the contents in long formay,with user and group IDs displayed numerically and show hidden files
 6-firstdirectory :is a script for creating a new directory in the /tmp/ directory
 7-movethatfile :moving the betty file to /tmp/my_first_directory
+ 8-firstdelete :delete betty from /tmp/my_first_directory
