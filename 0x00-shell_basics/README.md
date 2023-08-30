@@ -13,3 +13,4 @@ scriptfiles
 11-lists :is a script that lists all files (even ones with names beginning with a period character, which are normally hidden) in the current directory and the parent of the working directory and the /boot directory (in this order), in long format.
 12-file_type :a script the show the type of the file in /tmp
 13-symbolic_link :is a script to Create a symbolic link to /bin/ls, named __ls__
+14-copy_html :a script that copies all the html files to the parent directory without coping overwritten a file or copy older files than the existing ones
