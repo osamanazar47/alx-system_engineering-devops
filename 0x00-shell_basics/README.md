@@ -9,3 +9,4 @@ scriptfiles
 7-movethatfile :moving the betty file to /tmp/my_first_directory
 8-firstdelete :delete betty from /tmp/my_first_directory
 9-firstdirdeletion :is a script for deleting (my_first_directory)
+10-back :is a script for movig to the previous directory
