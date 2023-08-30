@@ -11,3 +11,4 @@ scriptfiles
 9-firstdirdeletion :is a script for deleting (my_first_directory)
 10-back :is a script for movig to the previous directory
 11-lists :is a script that lists all files (even ones with names beginning with a period character, which are normally hidden) in the current directory and the parent of the working directory and the /boot directory (in this order), in long format.
+12-file_type :a script the show the type of the file in /tmp
