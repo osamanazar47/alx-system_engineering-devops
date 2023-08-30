@@ -6,3 +6,4 @@ scriptfiles
 4-listmorefiles :this script is for displaying the content of the current directory (including hidden files)
 5-listfilesdigitonly :is a script for displaying the contents in long formay,with user and group IDs displayed numerically and show hidden files
 6-firstdirectory :is a script for creating a new directory in the /tmp/ directory
+7-movethatfile :moving the betty file to /tmp/my_first_directory
