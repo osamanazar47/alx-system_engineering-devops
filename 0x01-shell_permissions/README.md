@@ -8,3 +8,5 @@
 7-everybody : a script for giving the execution permissio to all
 8-James_Bond : a script that gives the owner and the group owner no permissions at all and give the others all permissions
 9-John_Doe : a script that set the file to aspecific mode
+10-mirror_permissions : a script to copy the mode of the file olleh to the file hello
+11-directories_permissions : a script to give execute permission to all subdirectories of the current one
