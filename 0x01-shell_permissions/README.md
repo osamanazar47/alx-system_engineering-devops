@@ -10,3 +10,4 @@
 9-John_Doe : a script that set the file to aspecific mode
 10-mirror_permissions : a script to copy the mode of the file olleh to the file hello
 11-directories_permissions : a script to give execute permission to all subdirectories of the current one
+12-directory_permissions : a script that creates a directory called my_dir with permissions 751 in the working directory.
