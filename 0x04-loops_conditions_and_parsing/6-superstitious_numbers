@@ -19,4 +19,5 @@ while [ $count -lt 20 ]; do
 			echo "$count"
 			;;
 	esac
+	((count++))
 done
