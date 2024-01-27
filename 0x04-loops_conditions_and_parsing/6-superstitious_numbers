@@ -16,7 +16,7 @@ while [ $count -lt 20 ]; do
 			echo "bad luck from Italy "
 			;;
 		*)
-			echo "$i"
+			echo "$count"
 			;;
 	esac
 done
