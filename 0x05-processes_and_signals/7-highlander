@@ -2,9 +2,9 @@
 #A Bash script that displays:
 # - To infinity and beyond indefinitely with a sleep 2 in between each iteration
 # - I am invincible!!! when receiving a SIGTERM signal
-trap "echo 'I am invincible!!!'; exit" SIGTERM
-count=0
-while [ $count -le 10 ]; do
+while true
+do
 	echo "To infinity and beyond"
 	sleep 2
+	trap 'echo "I am invincible!!!"' SIGTERM
 done
