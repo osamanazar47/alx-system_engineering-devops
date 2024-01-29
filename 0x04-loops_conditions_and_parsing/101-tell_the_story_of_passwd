@@ -5,4 +5,4 @@ while IFS=':' read -r uname passw uid gid information home shell; do
 		"lives in $home and rides $shell."\
 		"$uid's place is protected by the passcode $passw, "\
 		"more info aboout the user here: $information"
-	done
+	done < "/etc/passwd"
