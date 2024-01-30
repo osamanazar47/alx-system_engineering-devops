@@ -1,5 +1,5 @@
 #!/usr/bin/env ruby
-if ARGV.length < 2
+if ARGV.length != 2
     exit 1
 end
 reg = ARGV[1]
