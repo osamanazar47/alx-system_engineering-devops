@@ -1,7 +1,7 @@
 #!/usr/bin/env ruby
-if ARGV.length != 2
+if ARGV.length != 1
     exit 1
 end
-reg = ARGV[1]
+reg = ARGV[0]
 matches = reg.scan(/School/)
-puts "{matches}"
+puts matches.join
