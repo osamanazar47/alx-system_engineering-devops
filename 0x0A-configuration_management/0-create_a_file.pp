@@ -1,4 +1,5 @@
-file {'name':
+#a script that creates a file in /tmp
+file {'school':
   ensure  => file,
   path    => '/tmp/school',
   owner   => 'www-data',
