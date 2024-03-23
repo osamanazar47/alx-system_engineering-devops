@@ -1,4 +1,4 @@
-file {'school':
+file {'name':
   ensure  => file,
   path    => '/tmp/school',
   owner   => 'www-data',
