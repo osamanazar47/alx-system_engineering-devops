@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+#Ab ash script that runs the whoami command under the user passed as a argument
+sudo -u "$1" whoami
