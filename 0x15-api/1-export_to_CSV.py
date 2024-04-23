@@ -23,7 +23,7 @@ def get_todo_list_progress(employee_id):
         # Fetch user data
         user_response = requests.get(user_endpoint)
         user_data = user_response.json()
-        name = user_data['name']
+        name = user_data['username']
 
         # Fetch user's todo list
         todo_response = requests.get(todo_endpoint)
