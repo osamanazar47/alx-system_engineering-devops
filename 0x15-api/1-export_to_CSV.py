@@ -3,9 +3,9 @@
 a python script that, using a specific REST API, for a given employee ID,
 returns information about his/her TODO list progress
 """
+import csv
 import requests
 import sys
-import csv
 
 
 def get_todo_list_progress(employee_id):
@@ -35,9 +35,9 @@ def get_todo_list_progress(employee_id):
         total_t = len(todo_data)
 
         # Display progress
-        print(f"Employee {name} is done with tasks({len_of_com}/{total_t}):")
-        for task in completed_t:
-            print(f"\t {task['title']}")
+        #print(f"Employee {name} is done with tasks({len_of_com}/{total_t}):")
+        #for task in completed_t:
+            #print(f"\t {task['title']}")
 
         rows = []
         for item in todo_data:
