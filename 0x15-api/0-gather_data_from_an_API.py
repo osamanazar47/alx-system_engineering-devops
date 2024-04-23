@@ -3,10 +3,12 @@
 a python script that, using a specific REST API, for a given employee ID,
 returns information about his/her TODO list progress
 """
-import sys
 import requests
+import sys
+
 
 def get_todo_list_progress(employee_id):
+    """A function for fetching data from the REST API"""
     # Base URL of the REST API
     base_url = 'https://jsonplaceholder.typicode.com'
 
@@ -20,24 +22,25 @@ def get_todo_list_progress(employee_id):
         # Fetch user data
         user_response = requests.get(user_endpoint)
         user_data = user_response.json()
-        employee_name = user_data['name']
+        name = user_data['name']
 
         # Fetch user's todo list
         todo_response = requests.get(todo_endpoint)
         todo_data = todo_response.json()
 
         # Count completed tasks
-        completed_tasks = [task for task in todo_data if task['completed']]
-        num_completed_tasks = len(completed_tasks)
-        total_tasks = len(todo_data)
+        completed_t = [task for task in todo_data if task['completed']]
+        len_of_com = len(completed_t)
+        total_t = len(todo_data)
 
         # Display progress
-        print(f"Employee {employee_name} is done with tasks ({num_completed_tasks}/{total_tasks}):")
-        for task in completed_tasks:
+        print(f"Employee {name} is done with tasks ({len_of_com}/{total_t}):")
+        for task in completed_t:
             print(f"\t{task['title']}")
 
     except requests.exceptions.RequestException as e:
         print("Error:", e)
+
 
 if __name__ == "__main__":
     if len(sys.argv) != 2:
