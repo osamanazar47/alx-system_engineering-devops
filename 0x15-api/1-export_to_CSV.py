@@ -43,8 +43,8 @@ def get_todo_list_progress(employee_id):
         for item in todo_data:
             row = [item['userId'], name, item['completed'], item['title']]
             rows.append(row)
-        with open('USER_ID.csv', 'w', newline='') as f:
-            writer = csv.writer(f)
+        with open('{}.csv'.format(sys.argv[1]), 'w', newline='') as f:
+            writer = csv.writer(f, quoting=csv.QUOTE_ALL)
             writer.writerows(rows)
 
     except requests.exceptions.RequestException as e:
