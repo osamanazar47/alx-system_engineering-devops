@@ -44,4 +44,3 @@ if __name__ == "__main__":
     if len(sys.argv) != 1:
         sys.exit(1)
     get_todo_list_progress()
-    
