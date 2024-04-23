@@ -36,7 +36,7 @@ def get_todo_list_progress(employee_id):
         # Display progress
         print(f"Employee {name} is done with tasks({len_of_com}/{total_t}):")
         for task in completed_t:
-            print(f"     {task['title']}")
+            print(f"\t {task['title']}")
 
     except requests.exceptions.RequestException as e:
         print("Error:", e)
