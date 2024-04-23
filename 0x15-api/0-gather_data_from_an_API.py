@@ -34,7 +34,7 @@ def get_todo_list_progress(employee_id):
         total_t = len(todo_data)
 
         # Display progress
-        print(f"Employee {name} is done with tasks ({len_of_com}/{total_t}):")
+        print(f"Employee {name} is done with tasks({len_of_com}/{total_t}):")
         for task in completed_t:
             print(f"\t{task['title']}")
 
