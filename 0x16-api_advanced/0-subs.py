@@ -2,6 +2,7 @@
 """a python script for querying the Reddit API"""
 import requests
 
+
 def number_of_subscribers(subreddit):
     """a function that returns the number of subscribers for
     a given subreddit"""
@@ -14,8 +15,3 @@ def number_of_subscribers(subreddit):
         return data['data']['subscribers']
     else:
         return 0  # Return 0 if the subreddit doesn't exist or there's an error
-
-
-
-if __name__ == '__main__':
-    number_of_subscribers()
