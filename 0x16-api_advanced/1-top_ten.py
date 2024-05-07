@@ -16,8 +16,7 @@ def top_ten(subreddit):
                             allow_redirects=False)
 
     if response.status_code == 200:
-        data = response.json()
-        posts = data['data']['children']
-        [print ([post['data']['title'] for post in posts])]
+        posts = response.json().get('data')
+        [print(post.get('data').get('title')) for post in posts.get('children')]
     else:
         return ('None')  # Return 0 if the subreddit doesn't exist or there's an error
