@@ -1,0 +1,20 @@
+#!/usr/bin/env bash
+# Installs and sets up HAProxy
+
+# Enable HAProxy
+echo "ENABLED=1" | sudo tee /etc/default/haproxy > /dev/null
+
+# Configure HAProxy
+sudo tee -a /etc/haproxy/haproxy.cfg > /dev/null <<EOF
+listen load_balancer_frontend
+   bind *:80
+   mode http
+   balance roundrobin
+   option httpclose
+   option forwardfor
+   server 17272-web-01 54.84.76.90:80 check
+   server 17272-web-02 34.229.161.45:80 check
+EOF
+
+# Start HAProxy service
+sudo service haproxy restart
